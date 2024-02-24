@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management - Page 1</title>
+    <link rel="stylesheet" href="emp.css">
+    <link rel="icon" href="#" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Management - Page 1</h1>
+        <form id="employeeform1" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="empId">Employee ID:</label>
+                <input type="text" id="empId" required>
+              </div>
+              <div class="form-group">
+                <label for="department">Department:</label>
+                <select id="department" required>
+                  <option value="IT">IT</option>
+                  <option value="HR">HR</option>
+                  <option value="Finance">Finance</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="gender" name="gender" value="Male" required>Male
+                
+                <input type="radio" id="gender" name="gender" value="Female" required>female
+              </div>
+            <div class="form-group">
+                <label for="designation">Designation:</label>
+                <input type="text" id="designation" name="designation" required>
+            </div>
+            <div class="form-group">
+                <label for="salary">Salary:</label>
+                <input type="number" id="salary" name="salary" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <button type="button" onclick="nextPage()">Next</button>
+        </form>
+    </div>
+    <script src="emp.js"></script>
+</body>
+</html>
