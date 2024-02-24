@@ -4,7 +4,7 @@ const mysql = require('mysql2');
 const cors=require('cors');
 
 const app = express();
-const port = 3000;
+//const port = 3000;
 
 const db = mysql.createConnection({
     host: 'bl91kqvm88huxxljjppp-mysql.services.clever-cloud.com',
@@ -34,6 +34,6 @@ app.post('/addemployee', (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log('Server is running on port3000');
+app.listen(port, () => {
+    console.log('Server is running on https://employee-5.onrender.com/ ');
 });
