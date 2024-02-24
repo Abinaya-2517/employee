@@ -7,10 +7,10 @@ const app = express();
 const port = 3000;
 
 const db = mysql.createConnection({
-    host: 'bqdva2aphs7lnuynsylj-mysql.services.clever-cloud.com',
-    user: 'uwbq2u6oisnwy5xj',
-    password: 'uM11dRGoxAnpQxTqHDzC',
-    database: 'bqdva2aphs7lnuynsylj'
+    host: 'bl91kqvm88huxxljjppp-mysql.services.clever-cloud.com',
+    user: 'utawngl2illyeyaq',
+    password: 'utawngl2illyeyaq',
+    database: 'utawngl2illyeyaq'
 });
 
 db.connect((err) => {
