@@ -34,6 +34,6 @@ app.post('/addemployee', (req, res) => {
     });
 });
 
-app.listen(port, () => {
-    console.log('Server is running on https://employee-5.onrender.com/ ');
+app.listen(3000, () => {
+    console.log('Server is running on 3000 ');
 });
