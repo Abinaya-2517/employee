@@ -45,7 +45,7 @@ function submitForm() {
         aadharNum: aadharNum
     };
 
-    fetch('http://localhost:3000/addemployee', {
+    fetch('http://localhost:3001/addemployee', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -70,9 +70,13 @@ function submitForm() {
                 Aadhar Number:${data.aadharNum}
             
         `;
+
+        // Redirect to admin page after displaying flash card
+        
         alert(flashCardHTML);
         localStorage.clear();
         window.location.href = 'emppage1.html';
+
     })
     .catch(error => {
         console.error('Error submitting form:', error);

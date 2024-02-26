@@ -1,0 +1,52 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background:url("employee3.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-container {
+    background-color:transparent;
+    backdrop-filter:blur(10px);
+    border: 2px solid rgb(2, 74, 49);
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.admin{
+    color:black;
+}
+
+
+.signup-form {
+    max-width: 200px;
+    
+}
+.signup-form input[type="text"],
+.signup-form input[type="password"],
+.signup-form button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    max-width: fit-content;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    align-items: center;
+}
+.signup-form button {
+    background-color: #942f00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #c5480a;
+}
