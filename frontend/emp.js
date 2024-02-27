@@ -45,7 +45,7 @@ function submitForm() {
         aadharNum: aadharNum
     };
 
-    fetch('http://localhost:3001/addemployee', {
+    fetch('https://employee-management-system-nq7d.onrender.com/addemployee', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

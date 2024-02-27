@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
       event.preventDefault(); 
       const emailid= document.getElementById('emailid').value;
       const password = document.getElementById('password').value;
-      fetch('http://localhost:3001/admin', {
+      fetch('https://employee-management-system-nq7d.onrender.com/admin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
