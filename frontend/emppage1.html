@@ -36,11 +36,16 @@
               </div>
             <div class="form-group">
                 <label for="designation">Designation:</label>
-                <input type="text" id="designation" name="designation" required>
+                <select id="designation" required>
+                  <option value="Manager">Manager</option>
+                  <option value="Team Lead">Team leader</option>
+                  <option value="Finance">Others</option>
+                </select>
+                
             </div>
             <div class="form-group">
                 <label for="salary">Salary:</label>
-                <input type="number" id="salary" name="salary" required>
+                <input type="number" id="salary" name="salary"  required>
             </div>
             <div class="form-group">
                 <label for="dob">Date of Birth:</label>

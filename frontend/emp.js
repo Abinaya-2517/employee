@@ -6,6 +6,10 @@ function nextPage() {
     const designation = document.getElementById('designation').value;
     const salary = document.getElementById('salary').value;
     const dob = document.getElementById('dob').value;
+    if (salary < 5000 || isNaN(salary)) {
+        alert("Salary must be a positive number and greater than or equal to 5000.");
+        return;
+    }
 
     localStorage.setItem('name', name);
     localStorage.setItem('empId', empId);
@@ -45,7 +49,7 @@ function submitForm() {
         aadharNum: aadharNum
     };
 
-    fetch('https://employee-management-system-nq7d.onrender.com/addemployee', {
+    fetch('http://localhost:3001/addemployee', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

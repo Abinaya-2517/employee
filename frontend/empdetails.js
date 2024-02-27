@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const tableBody = document.querySelector('#employeeTable tbody');
 
-    fetch('https://employee-management-system-nq7d.onrender.com/employees')
+    fetch('http://localhost:3001/employees')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function deleteEmployee(employeeId) {
         if (confirm('Are you sure you want to delete this employee?')) {
-            fetch(`https://employee-management-system-nq7d.onrender.com/deleteemployee/${employeeId}`, {
+            fetch(`http://localhost:3001/deleteemployee/${employeeId}`, {
                 method: 'DELETE'
             })
             .then(response => {
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(data => {
                 alert('Employee deleted successfully!');
                 // Refresh the table after deletion
-                fetch('https://employee-management-system-nq7d.onrender.com/employees')
+                fetch('http://localhost:3001/employees')
                 .then(response => response.json())
                 .then(data => {
                     renderTable(data);
