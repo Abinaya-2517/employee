@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const tableBody = document.querySelector('#employeeTable tbody');
 
-    fetch('https://emloyee-manangement-system.onrender.com/employees')
+    fetch('https://employee-6.onrender.com/employees')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function deleteEmployee(employeeId) {
         if (confirm('Are you sure you want to delete this employee?')) {
-            fetch(`https://emloyee-manangement-system.onrender.com/deleteemployee/${employeeId}`, {
+            fetch(`https://employee-6.onrender.com/deleteemployee/${employeeId}`, {
                 method: 'DELETE'
             })
             .then(response => {
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(data => {
                 alert('Employee deleted successfully!');
                 // Refresh the table after deletion
-                fetch('https://emloyee-manangement-system.onrender.com/employees')
+                fetch('https://employee-6.onrender.com/employees')
                 .then(response => response.json())
                 .then(data => {
                     renderTable(data);

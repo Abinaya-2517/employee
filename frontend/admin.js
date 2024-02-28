@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
       event.preventDefault(); 
       const emailid= document.getElementById('emailid').value;
       const password = document.getElementById('password').value;
-      fetch('https://emloyee-manangement-system.onrender.com/admin', {
+      fetch('https://employee-6.onrender.com/admin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -49,7 +49,7 @@ function submitForm() {
         aadharNum: aadharNum
     };
 
-    fetch('https://emloyee-manangement-system.onrender.com/addemployee', {
+    fetch('https://employee-6.onrender.com/addemployee', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
